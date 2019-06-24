@@ -22,5 +22,10 @@ Why Javascript web application:
 
 ```bash
 npm install
-npm start```
+npm start
+```
 
+### Things I learned
+
+- Install Node and npm using NVM.
+- Set permissions: `sudo chown -R $(whoami) ~/.npm`

@@ -24,4 +24,10 @@ app.get('/webcam', (req, res) => res.sendFile(path.join(viewsDir, 'webcam.html')
 
 
 
-app.listen(3000, () => console.log('Server running on http://localhost:3000/'))  
+// app.listen(3000, () => console.log('Server running on http://localhost:3000/'))  
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port, () => console.log('Server running on http://localhost:3000/'));
